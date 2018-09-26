@@ -1,0 +1,16 @@
+# HTTP redirect
+
+A small HTTP server that redirects all requests.
+
+## Usage
+
+Following example redirects all requests to HTTPS:
+
+    redirect -protocol https -port 443
+
+Use `-h` option to list all options.
+
+## Container Usage
+
+    FROM vmj0/redirect:0.9
+    CMD ["/redirect", "-protocol", "https", "-port", ""]
